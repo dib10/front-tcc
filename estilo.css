@@ -142,7 +142,7 @@ blockquote {
 /* aumentando o "zoom" em telas maiores na primeira sessão*/
 @media (min-width: 992px) {
   .hero .titulo {
-      font-size: 4.5rem; /* Aumenta o tamanho do título para telas grandes */
+      font-size: 4.3rem; /* Aumenta o tamanho do título para telas grandes */
   }
 
   .hero p.lead {
