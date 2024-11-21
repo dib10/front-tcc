@@ -125,7 +125,7 @@ blockquote {
   width: 100%;
   background-color: #D9D9D9;
 }
-.btn-login {
+.btn-form {
   background-color: #0de5a8;
   color: white; 
   border: none;
@@ -135,11 +135,11 @@ blockquote {
   transition: background-color 0.3s ease;
 }
 
-.btn-login:hover {
+.btn-form:hover {
   background-color: #14c3a2; /* Cor ao passar o mouse */
 }
 
-/* aumentando o "zoom" em telas maiores na primeira sessão*/
+/* aumentando o "zoom" em telas maiores na primeira sessão da index*/
 @media (min-width: 992px) {
   .hero .titulo {
       font-size: 4.3rem; /* Aumenta o tamanho do título para telas grandes */
