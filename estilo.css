@@ -1,0 +1,128 @@
+/* Fonte padrão como Rubik */
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #f0f0f0;
+  
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; /* Negrito */
+  color:#333333;
+}
+
+/* Textos gerais */
+p, blockquote, a, li {
+  font-weight: 400; /* Normal */
+  font-family: 'Rubik', sans-serif;
+}
+
+
+/* Rodapé */
+footer {
+  font-size: 14px;
+}
+
+/* Bloco de citação */
+blockquote {
+  font-style: italic;
+  color: #6c757d;
+}
+#sobre
+{
+  background-color: #f0f0f0; /* Cor de fundo desejada */
+  
+}
+#acessar
+{
+  background-color: #f0f0f0; /* Cor de fundo desejada */
+
+}
+
+/* Funcionalidades */
+.funcionalidades {
+  background-color: #f0f0f0; /* Fundo alinhado ao resto da página */
+  color: #333333;
+  font-family: 'Rubik', sans-serif; 
+}
+
+.funcionalidade {
+  display: flex; /* Container flex */
+  flex-direction: column; /* Alinhamento vertical dos itens */
+  justify-content: center; /* Centraliza os itens verticalmente */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  background-color: #ffffff; /* Fundo branco para os cartões */
+  border: 1px solid #e0e0e0; /* Borda clara */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 20px;
+  height: 100%; /* Garantia de altura igual */
+  text-align: center;
+}
+
+.funcionalidade img {
+  max-width: 50px;
+  margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.funcionalidade h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333333;
+}
+.destaque-cor {
+  color: #0de5a8;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #ffffff; /* Fundo branco */
+  color: #6c757d;
+  text-align: center;
+  padding: 10px;
+  width: 100%; /* Ocupe toda a largura */
+  margin-top: auto; /* Mantém no final da página */
+}
+.botao {
+  background-color: #4CAF50; /* Cor de fundo */
+  color: white;              /* Cor do texto */
+  border: none;              /* Sem borda */
+  padding: 10px 20px;        /* Espaçamento interno */
+  border-radius: 5px;        /* Bordas arredondadas */
+  cursor: pointer;           /* Cursor de mão ao passar o mouse */
+}
+
+.botao:hover {
+  background-color: #4CAF50; /* Cor ao passar o mouse */
+  color: #ffffff;
+}
+
+
+/*carossel*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semitransparente */
+  border-radius: 50%; /* Bordas arredondadas */
+  width: 40px; /* Largura do ícone */
+  height: 40px; /* Altura do ícone */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo mais escuro ao passar o mouse */
+}
+
+.carousel-item blockquote {
+  max-width: 600px; /* Largura máxima permitida */
+  margin: 0 auto; /* Centraliza o texto */
+  word-wrap: break-word; /* Quebra palavras longas */
+  word-break: break-word; /* Garante quebra em navegadores antigos */
+  line-height: 1.6; /* Melhora o espaçamento entre linhas */
+}
+/* Formulário de login */
+.login-card {
+  max-width: 400px;
+  width: 100%;
+  background-color: #D9D9D9;
+}
+
