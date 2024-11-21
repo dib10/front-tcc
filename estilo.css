@@ -138,6 +138,19 @@ blockquote {
 .btn-form:hover {
   background-color: #14c3a2; /* Cor ao passar o mouse */
 }
+.btn-editar
+{
+  background-color: #14c3a2; /* Cor ao passar o mouse */
+
+}
+.btn-editar:hover {
+  background-color: #14c3a2; /* Cor ao passar o mouse */
+}
+.tabela th {
+  background-color: #14c3a2; /* Cor de fundo */
+  color: white; /* Cor do texto */
+}
+
 
 /* aumentando o "zoom" em telas maiores na primeira sessão da index*/
 @media (min-width: 992px) {
