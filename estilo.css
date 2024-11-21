@@ -125,4 +125,29 @@ blockquote {
   width: 100%;
   background-color: #D9D9D9;
 }
+.btn-login {
+  background-color: #0de5a8;
+  color: white; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #14c3a2; /* Cor ao passar o mouse */
+}
+
+/* aumentando o "zoom" em telas maiores na primeira sessão*/
+@media (min-width: 992px) {
+  .hero .titulo {
+      font-size: 4.5rem; /* Aumenta o tamanho do título para telas grandes */
+  }
+
+  .hero p.lead {
+      font-size: 1.5rem; /* Aumenta o tamanho do parágrafo para telas grandes */
+      line-height: 1.8;  /* Mantém espaçamento agradável */
+  }
+}
 
