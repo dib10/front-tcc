@@ -10,7 +10,7 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">   <!-- fixed top para fixar ela -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="../index.html">E-Stok</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,19 @@
 
     <!-- Lista de Lotes -->
     <main class="container py-5 flex-grow-1">
-        <h2 class="mb-4 text-center">Lista de Lotes</h2>
+        <h2 class="mb-4 text-center">Listagem de Lotes</h2>
+        
+        <!-- Barra de Pesquisa -->
+        <div class="row mb-4">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Pesquisar lote pelo código ou nome do produto" aria-label="Pesquisar lote">
+                    <button class="btn btn-form" type="button">Pesquisar</button>
+                </div>
+            </div>
+        </div>
+
+
         <div class="table-responsive">
             <table class="table table-bordered table-striped tabela">
                 <thead class="table-light">
@@ -51,10 +63,10 @@
                         <td>100</td>
                         <td>2024-01-15</td>
                         <td>2025-01-15</td>
-                        <td>QR123A45</td> 
+                        <td>QR123A45</td>
                         <td>
                             <div class="d-flex gap-2">
-                                <button class="btn btn-sm btn-editar">Editar</button>
+                                <button class="btn btn-sm btn-primary">Editar</button>
                                 <button class="btn btn-sm btn-danger">Excluir</button>
                             </div>
                         </td>
@@ -66,10 +78,10 @@
                         <td>200</td>
                         <td>2024-02-10</td>
                         <td>2025-02-10</td>
-                        <td>QR678B90</td> 
+                        <td>QR678B90</td>
                         <td>
                             <div class="d-flex gap-2">
-                                <button class="btn btn-sm btn-editar">Editar</button>
+                                <button class="btn btn-sm btn-primary">Editar</button>
                                 <button class="btn btn-sm btn-danger">Excluir</button>
                             </div>
                         </td>

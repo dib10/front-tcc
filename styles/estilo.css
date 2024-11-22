@@ -99,9 +99,9 @@ blockquote {
 }
 
 /* Botão geral */
-.botao, .btn-form, .btn-editar {
+.botao, .btn-form {
   background-color: #0de5a8;
-  color: white;
+  color: #595b5a;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
