@@ -2,25 +2,30 @@
 body {
   font-family: 'Rubik', sans-serif;
   background-color: #f0f0f0;
-  
+  padding-top: 70px; /* Ajuste conforme a altura da sua navbar para evitar sobreposição */
 }
 
 /* Títulos */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700; /* Negrito */
-  color:#333333;
+  font-weight: 700;
+  color: #333333;
 }
 
 /* Textos gerais */
 p, blockquote, a, li {
-  font-weight: 400; /* Normal */
+  font-weight: 400;
   font-family: 'Rubik', sans-serif;
 }
 
-
 /* Rodapé */
-footer {
+footer, .footer {
+  background-color: #ffffff;
+  color: #6c757d;
   font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  margin-top: auto;
 }
 
 /* Bloco de citação */
@@ -28,106 +33,75 @@ blockquote {
   font-style: italic;
   color: #6c757d;
 }
-#sobre
-{
-  background-color: #f0f0f0; /* Cor de fundo desejada */
+
+/* Seções específicas */
+#sobre, #acessar {
+  background-color: #f0f0f0;
+}
+
+/* funcionalidades */
+.funcionalidades {
+  background-color: #f0f0f0;
+  padding: 50px 0;
+}
+
+/* Cartões de funcionalidades */
+.funcionalidade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transition: transform 0.3s ease;
+  height: 100%;
+  min-height: 150px;
+}
+
+.funcionalidade:hover {
+  transform: scale(1.05);
+}
+
+
+.card.funcionalidade {
+  flex: 1;
+}
+
+/* Ícones */
+.img-icone {
+  max-width: 60px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#funcionalidades .col-12.col-lg-6.align-self-start {
+  margin-top: 180px; /* desci na mão */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  height: 100%;
+}
+
+.funcionalidades .titulo-funcionalidades {
+  font-size: 2.5rem;
   
 }
-#acessar
-{
-  background-color: #f0f0f0; /* Cor de fundo desejada */
 
-}
-
-/* Funcionalidades */
-.funcionalidades {
-  background-color: #f0f0f0; /* Fundo alinhado ao resto da página */
-  color: #333333;
-  font-family: 'Rubik', sans-serif; 
-}
-
-.funcionalidade {
-  display: flex; /* Container flex */
-  flex-direction: column; /* Alinhamento vertical dos itens */
-  justify-content: center; /* Centraliza os itens verticalmente */
-  align-items: center; /* Centraliza os itens horizontalmente */
-  background-color: #ffffff; /* Fundo branco para os cartões */
-  border: 1px solid #e0e0e0; /* Borda clara */
-  border-radius: 10px; /* Bordas arredondadas */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  padding: 20px;
-  height: 100%; /* Garantia de altura igual */
-  text-align: center;
-}
-
-.funcionalidade img {
-  max-width: 50px;
-  margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
-}
-
-.funcionalidade h5 {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #333333;
-}
+/* Cores de destaque */
 .destaque-cor {
   color: #0de5a8;
   font-weight: bold;
 }
 
-.footer {
-  background-color: #ffffff; /* Fundo branco */
-  color: #6c757d;
-  text-align: center;
-  padding: 10px;
-  width: 100%; /* Ocupe toda a largura */
-  margin-top: auto; /* Mantém no final da página */
-}
-.botao {
-  background-color: #4CAF50; /* Cor de fundo */
-  color: white;              /* Cor do texto */
-  border: none;              /* Sem borda */
-  padding: 10px 20px;        /* Espaçamento interno */
-  border-radius: 5px;        /* Bordas arredondadas */
-  cursor: pointer;           /* Cursor de mão ao passar o mouse */
-}
-
-.botao:hover {
-  background-color: #4CAF50; /* Cor ao passar o mouse */
-  color: #ffffff;
-}
-
-
-/*carossel*/
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semitransparente */
-  border-radius: 50%; /* Bordas arredondadas */
-  width: 40px; /* Largura do ícone */
-  height: 40px; /* Altura do ícone */
-}
-
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-  background-color: rgba(0, 0, 0, 0.7); /* Fundo mais escuro ao passar o mouse */
-}
-
-.carousel-item blockquote {
-  max-width: 600px; /* Largura máxima permitida */
-  margin: 0 auto; /* Centraliza o texto */
-  word-wrap: break-word; /* Quebra palavras longas */
-  word-break: break-word; /* Garante quebra em navegadores antigos */
-  line-height: 1.6; /* Melhora o espaçamento entre linhas */
-}
-/* Formulário de login */
-.login-card {
-  max-width: 400px;
-  width: 100%;
-  background-color: #D9D9D9;
-}
-.btn-form {
+/* Botão geral */
+.botao, .btn-form, .btn-editar {
   background-color: #0de5a8;
-  color: white; 
+  color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -135,33 +109,65 @@ blockquote {
   transition: background-color 0.3s ease;
 }
 
-.btn-form:hover {
-  background-color: #14c3a2; /* Cor ao passar o mouse */
+.botao:hover, .btn-form:hover, .btn-editar:hover {
+  background-color: #14c3a2;
 }
-.btn-editar
-{
-  background-color: #14c3a2; /* Cor ao passar o mouse */
 
-}
-.btn-editar:hover {
-  background-color: #14c3a2; /* Cor ao passar o mouse */
-}
+/* Tabela de funcionalidades */
 .tabela th {
-  background-color: #14c3a2; /* Cor de fundo */
-  color: white; /* Cor do texto */
+  background-color: #14c3a2;
+  color: white;
+}
+
+/* Formulário de login */
+.login-card {
+  max-width: 400px;
+  width: 100%;
+  background-color: #D9D9D9;
+}
+
+/* Carrossel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-item blockquote {
+  max-width: 600px;
+  margin: 0 auto;
+  word-wrap: break-word;
+  line-height: 1.6;
 }
 
 
-/* aumentando o "zoom" em telas maiores na primeira sessão da index*/
+/* Responsividade - Ajuste de Zoom em telas maiores */
 @media (min-width: 992px) {
   .hero .titulo {
-      font-size: 4.3rem; /* Aumenta o tamanho do título para telas grandes */
+    font-size: 4.3rem;
   }
 
   .hero p.lead {
-      font-size: 1.5rem; /* Aumenta o tamanho do parágrafo para telas grandes */
-      line-height: 1.8;  /* Mantém espaçamento agradável */
+    font-size: 1.8rem;
+    line-height: 1.7;
+  }
+
+  .funcionalidades .titulo-funcionalidades {
+    font-size: 2.5rem;
   }
 }
 
-
+/* Responsividade - Ajuste de ordem dos elementos em telas menores */
+@media (max-width: 991px) {
+  #funcionalidades .col-12.col-lg-6.align-self-start {
+    order: -1;
+    margin-bottom: 20px;
+  }
+}
