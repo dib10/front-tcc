@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible'); // Adiciona a classe "visible"
+          entry.target.classList.add('visible'); 
           // Não desative a observação para reativar as animações
         } else {
           entry.target.classList.remove('visible'); // Remove a classe quando sair do viewport
