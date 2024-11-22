@@ -29,7 +29,16 @@
 
     <!-- Lista de Produtos -->
     <main class="container py-5 flex-grow-1">
-        <h2 class="mb-4 text-center">Lista de Produtos</h2>
+        <h2 class="mb-4 text-center">Listagem de Produtos</h2>
+         <!-- Barra de Pesquisa -->
+         <div class="row mb-4">
+            <div class="col-12 col-md-6 mx-auto">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Pesquisar produto" aria-label="Pesquisar lote">
+                    <button class="btn btn-form" type="button">Pesquisar</button>
+                </div>
+            </div>
+        </div>
         <div class="table-responsive">
             <table class="table table-bordered table-striped tabela">
                 <thead class="table-light">
@@ -61,7 +70,7 @@
                         <td>
                             <div class="d-flex gap-2">
                                 <button class="btn btn-sm btn-primary">Editar</button>
-                                <button class="btn btn-sm btn-primary">Excluir</button>
+                                <button class="btn btn-sm btn-danger">Excluir</button>
                             </div>
                         </td>
                     </tr>
@@ -78,7 +87,7 @@
                         <td>300</td>
                         <td>
                             <div class="d-flex gap-2">
-                                <button class="btn btn-sm btn-editar">Editar</button>
+                                <button class="btn btn-sm btn-primary">Editar</button>
                                 <button class="btn btn-sm btn-danger">Excluir</button>
                             </div>
                         </td>
