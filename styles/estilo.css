@@ -147,6 +147,20 @@ blockquote {
   line-height: 1.6;
 }
 
+/* Animação Javascripto */
+
+/* Estado inicial */
+.section-animation {
+  opacity: 0;
+  transform: translateY(50px); 
+  transition: all 0.8s ease-out; 
+}
+
+.section-animation.visible {
+  opacity: 1;
+  transform: translateY(0); /* Posição final */
+}
+
 
 /* Responsividade - Ajuste de Zoom em telas maiores */
 @media (min-width: 992px) {
